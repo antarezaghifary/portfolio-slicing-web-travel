@@ -634,31 +634,13 @@ h1 {
   grid-column: span 12 / span 12;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
-.col-span-6 {
-  grid-column: span 6 / span 6;
-}
-
-.row-span-full {
-  grid-row: 1 / -1;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
-
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-6 {
@@ -669,36 +651,28 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .mt-12 {
   margin-top: 3rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .flex {
@@ -721,16 +695,8 @@ h1 {
   width: 75%;
 }
 
-.w-\[350px\] {
-  width: 350px;
-}
-
 .w-full {
   width: 100%;
-}
-
-.flex-auto {
-  flex: 1 1 auto;
 }
 
 .grow {
@@ -758,14 +724,6 @@ h1 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -780,10 +738,6 @@ h1 {
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.flex-nowrap {
-  flex-wrap: nowrap;
 }
 
 .items-center {
@@ -892,6 +846,11 @@ h1 {
   padding-right: 2rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -920,11 +879,6 @@ h1 {
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .text-center {
@@ -977,11 +931,6 @@ h1 {
   line-height: 1.75rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -996,6 +945,15 @@ h1 {
 
 .leading-tight {
   line-height: 1.25;
+}
+
+.text-\[16\] {
+  color: 16;
+}
+
+.text-orange {
+  --tw-text-opacity: 1;
+  color: rgb(255 87 34 / var(--tw-text-opacity));
 }
 
 .text-pink {
@@ -1016,15 +974,6 @@ h1 {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-orange {
-  --tw-text-opacity: 1;
-  color: rgb(255 87 34 / var(--tw-text-opacity));
-}
-
-.text-\[16\] {
-  color: 16;
 }
 
 .opacity-0 {
@@ -1078,22 +1027,6 @@ h1 {
     order: 2;
   }
 
-  .sm\:col-span-6 {
-    grid-column: span 6 / span 6;
-  }
-
-  .sm\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
-  .sm\:col-span-12 {
-    grid-column: span 12 / span 12;
-  }
-
-  .sm\:row-span-6 {
-    grid-row: span 6 / span 6;
-  }
-
   .sm\:mt-16 {
     margin-top: 4rem;
   }
@@ -1122,20 +1055,8 @@ h1 {
     flex-direction: row;
   }
 
-  .sm\:flex-col {
-    flex-direction: column;
-  }
-
-  .sm\:items-center {
-    align-items: center;
-  }
-
   .sm\:gap-7 {
     gap: 1.75rem;
-  }
-
-  .sm\:text-center {
-    text-align: center;
   }
 
   .sm\:text-2xl {
@@ -1143,19 +1064,14 @@ h1 {
     line-height: 2rem;
   }
 
-  .sm\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .sm\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
@@ -1164,16 +1080,12 @@ h1 {
     margin-bottom: 43px;
   }
 
-  .md\:mt-\[43px\] {
-    margin-top: 43px;
-  }
-
   .md\:mt-0 {
     margin-top: 0px;
   }
 
-  .md\:flex {
-    display: flex;
+  .md\:mt-\[43px\] {
+    margin-top: 43px;
   }
 
   .md\:grid {
@@ -1182,10 +1094,6 @@ h1 {
 
   .md\:w-1\/2 {
     width: 50%;
-  }
-
-  .md\:w-full {
-    width: 100%;
   }
 
   .md\:flex-row {
@@ -1218,12 +1126,12 @@ h1 {
     grid-column: span 4 / span 4;
   }
 
-  .lg\:col-span-8 {
-    grid-column: span 8 / span 8;
-  }
-
   .lg\:col-span-6 {
     grid-column: span 6 / span 6;
+  }
+
+  .lg\:col-span-8 {
+    grid-column: span 8 / span 8;
   }
 
   .lg\:mx-0 {
@@ -1267,28 +1175,8 @@ h1 {
     flex: 1 1 auto;
   }
 
-  .lg\:grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
-  }
-
   .lg\:flex-col {
     flex-direction: column;
-  }
-
-  .lg\:content-center {
-    align-content: center;
-  }
-
-  .lg\:content-between {
-    align-content: space-between;
-  }
-
-  .lg\:content-around {
-    align-content: space-around;
   }
 
   .lg\:justify-start {
@@ -1301,10 +1189,6 @@ h1 {
 
   .lg\:justify-between {
     justify-content: space-between;
-  }
-
-  .lg\:gap-16 {
-    gap: 4rem;
   }
 
   .lg\:gap-4 {
